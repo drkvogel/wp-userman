@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "json-mock-server": "^0.0.6"
+  }
+}
