@@ -16,7 +16,4 @@ CLI
 
 
 
-### line endings problem
-
-[./notes/yarn-line-endings/yarn-line-endings.md]
 
