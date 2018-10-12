@@ -18,9 +18,9 @@ CLI
 
 https://stackoverflow.com/questions/9679932/how-to-use-package-installed-locally-in-node-modules
 
-`npm bin` lists node executables under the current directory. `npm run-script` with no arguments also lists. `npm run` is shorthand for `npm run-script`.
-
-https://docs.npmjs.com/cli/run-script
+`npm bin` shows the location of the `.bin` folder.
+`npm run-script` with no arguments lists node executables under the current directory.
+`npm run` is shorthand for `npm run-script`. See https://docs.npmjs.com/cli/run-script.
 
 Add something like:
 
@@ -34,4 +34,8 @@ Add something like:
 to `package.json`, then do `npm run server`.
 
 Or use [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b).
+
+### line endings problem
+
+/Users/kvogel/Projects/wp-userman/yarn-line-endings.md
 
