@@ -96,6 +96,7 @@ found 0 vulnerabilities
 
 and run:
 
+```
 [  6:22am ]  [ kvogel@kvogel-macbook-2018:~/Projects/wp-userman/test3-npm(master✗) ]
  $ /Users/kvogel/Projects/wp-userman/test3-npm/node_modules/.bin/json-mock-server
 [ERROR json-mock-server] - Could not resolve path: "/Users/kvogel/Projects/wp-userman/test3-npm/mock-server.config.js"
@@ -107,3 +108,25 @@ No error about line endings.
 Don't know why. Might post on SO.
 
 Avoid `yarn` for now.
+
+In the original folder, `/server`, I reinstalled using `npm`:
+
+```
+[  6:47am ]  [ kvogel@kvogel-macbook-2018:~/Projects/wp-userman/server(master✔) ]
+ $ rm -rf node_modules
+[  6:47am ]  [ kvogel@kvogel-macbook-2018:~/Projects/wp-userman/server(master✔) ]
+ $ npm i
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN server No repository field.
+npm WARN server No license field.
+added 55 packages from 29 contributors and audited 76 packages in 3.058s
+found 0 vulnerabilities
+[  6:47am ]  [ kvogel@kvogel-macbook-2018:~/Projects/wp-userman/server(master✗) ]
+ $ npm run server
+> @ server /Users/kvogel/Projects/wp-userman/server
+> json-mock-server
+[ERROR json-mock-server] - Could not resolve path: "/Users/kvogel/Projects/wp-userman/server/mock-server.config.js"
+Default config file could not be found. To specify a filepath use `--config`
+```
+
+And it works (well, it doesn't throw the line ending error).
